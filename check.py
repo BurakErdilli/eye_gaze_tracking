@@ -6,8 +6,7 @@ import time
 import bth
 import threading
 from datetime import datetime, timedelta
-# clock.tick eklenecek, kapalı goz için timer tutulacak, double blink tespit edilecek
-# presets
+
 font = cv2.FONT_HERSHEY_SIMPLEX
 CAMERA_SOURCE = 0
 BLINK_LIMIT = 5.2  # should be changed
@@ -15,7 +14,6 @@ HEIGHT = 1280
 WIDTH = 720
 blinked = False
 blinkedMinValue = 2
-
 currentcommand = "y"
 
 
