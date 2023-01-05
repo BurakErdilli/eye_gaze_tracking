@@ -119,11 +119,11 @@ def get_gaze_ratio_updown(eye_points, facial_landmarks):
 
     elif gaze_ratio > 0.95:
         cv2.putText(frame, "Down "+str("%.2f" % gaze_ratio),
-                    (400, 400), font, 2, (0, 255, 0), 3)
+                    (50, 500), font, 2, (0, 255, 0), 3)
 
     elif(gaze_ratio < 0.25):
         cv2.putText(frame, "UP "+str("%.2f" % gaze_ratio),
-                    (800, 400), font, 2, (255, 0, 0), 3)
+                    (50, 600), font, 2, (255, 0, 0), 3)
 
     return gaze_ratio
 
